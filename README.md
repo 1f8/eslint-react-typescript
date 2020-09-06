@@ -13,7 +13,7 @@ yarn add -D eslint-config-1f8typescript
 ```
 
 ```
-# .eslintrc (Gatsby)
+# .eslintrc (NextJS with typescript)
 module.exports = {
   globals: {
     __PATH_PREFIX__: true,
