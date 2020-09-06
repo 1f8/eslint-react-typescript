@@ -9,6 +9,7 @@ Don't believe there's any correct way, but this way fits our style.
 
 ```
 yarn add -D eslint-config-1f8typescript
+npx install-peerdeps --dev eslint-config-1f8typescript
 .touch .eslintrc
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-1f8typescript",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "1F8 React Typescript Linter",
   "main": "index.js",
   "scripts": {
