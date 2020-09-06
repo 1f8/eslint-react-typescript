@@ -3,7 +3,7 @@
 Helps you with styling your code.
 Don't believe there's any correct way, but this way fits our style.
 
-[NPM](https://www.npmjs.com/package/eslint-config-1f8typescript)
+[NPM](https://www.npmjs.com/package/@1f8/eslint-config-typescript)
 
 ### Instructions
 
