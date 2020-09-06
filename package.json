@@ -1,9 +1,10 @@
 {
-  "name": "eslint-config-1f8typescript",
-  "version": "1.0.7",
+  "name": "@1f8/eslint-config-typescript",
+  "version": "1.0.8",
   "description": "1F8 React Typescript Linter",
   "main": "index.js",
   "scripts": {
+    "publish": "npm publish --access public",
     "lint": "eslint --ext js,jsx,ts,tsx ."
   },
   "keywords": [

@@ -8,19 +8,16 @@ Don't believe there's any correct way, but this way fits our style.
 ### Instructions
 
 ```
-yarn add -D eslint-config-1f8typescript
-npx install-peerdeps --dev eslint-config-1f8typescript
+yarn add -D @1f8/eslint-config-typescript
+npx install-peerdeps --dev @1f8/eslint-config-typescript
 .touch .eslintrc
 ```
 
 ```
 # .eslintrc (NextJS with typescript)
 module.exports = {
-  globals: {
-    __PATH_PREFIX__: true,
-  },
   extends: [
-    '1f8typescript'
+    '@1f8/eslint-config-typescript'
   ]
 }
 ```
