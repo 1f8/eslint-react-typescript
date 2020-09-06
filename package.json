@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-1f8typescript",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "1F8 React Typescript Linter",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
   },
   "keywords": [
     "1F8",
-    "eslint"
+    "eslint",
+    "typescript"
   ],
   "author": "1F8 <kwa@1f8.dev>",
   "license": "MIT",

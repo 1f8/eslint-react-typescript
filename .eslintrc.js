@@ -1,14 +1,32 @@
 module.exports = {
-  globals: {
-    __PATH_PREFIX__: true,
+  root: true,
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  env: {
+    browser: true,
+    es6: true,
+    commonjs: true,
   },
   extends: [
-    'react-app',
-    'eslint:recommended',
+    'eslint:recommended'                          , // eslint default rules
+    'plugin:@typescript-eslint/eslint-recommended', // eslint TypeScript rules (github.com/typescript-eslint/typescript-eslint)
+    'plugin:@typescript-eslint/recommended'       ,
+    'plugin:react/recommended'                    , // eslint react rules (github.com/yannickcr/eslint-plugin-react)
+    'plugin:jsx-a11y/recommended'                 , // accessibility plugin
   ],
   rules: {
     // JS
-    'import/no-extraneous-dependencies': ['error', {'devDependencies': true}],
+    // 'import/no-extraneous-dependencies': ['error', {'devDependencies': true}],
     'no-console': 'error',
     'prefer-destructuring': ['error', {
       'AssignmentExpression': {
@@ -16,6 +34,15 @@ module.exports = {
       }
     }],
     
+    // .next doesnt require React in import
+    'react/react-in-jsx-scope': 'off',
+    // use typescript rather than prop-types
+    'react/prop-types': 'off',
+    // annoying to declare types for each react function component by default
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    // no implicit any
+    '@typescript-eslint/no-explicit-any': 'off',
+
     // React Rules
     'jsx-quotes': ['error', 'prefer-single'],
     'react/button-has-type': ['error', { button: true, submit: true, reset: false }],
