@@ -1,8 +1,12 @@
 {
   "name": "@1f8/eslint-config-typescript",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "1F8 React Typescript Linter",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:1f8/eslint-react-typescript.git"
+  },
   "scripts": {
     "publish": "npm publish --access public",
     "lint": "eslint --ext js,jsx,ts,tsx ."

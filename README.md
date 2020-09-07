@@ -10,14 +10,6 @@ Don't believe there's any correct way, but this way fits our style.
 ```
 yarn add -D @1f8/eslint-config-typescript
 npx install-peerdeps --dev @1f8/eslint-config-typescript
-.touch .eslintrc
-```
-
-```
-# .eslintrc (NextJS with typescript)
-module.exports = {
-  extends: [
-    '@1f8/eslint-config-typescript'
-  ]
-}
+cp node_modules/@1f8/eslint-config-react/.eslintignore .eslintignore
+cp node_modules/@1f8/eslint-config-react/next.eslintrc.js .eslintrc.js
 ```
