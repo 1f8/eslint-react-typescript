@@ -22,7 +22,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended', // eslint TypeScript rules (github.com/typescript-eslint/typescript-eslint)
     'plugin:@typescript-eslint/recommended'       ,
     'plugin:react/recommended'                    , // react rules (github.com/yannickcr/eslint-plugin-react)
-    "plugin:react-hooks/recommended"              , // enforce https://reactjs.org/docs/hooks-rules.html
+    'plugin:react-hooks/recommended'              , // enforce https://reactjs.org/docs/hooks-rules.html
     'plugin:jsx-a11y/recommended'                 , // accessibility plugin
   ],
   rules: {
