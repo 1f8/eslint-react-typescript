@@ -1,6 +1,6 @@
 {
   "name": "@1f8/eslint-config-typescript",
-  "version": "2.1.0",
+  "version": "1.2.0",
   "description": "1F8 React Typescript Linter",
   "main": "index.js",
   "repository": {
