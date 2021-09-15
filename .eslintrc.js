@@ -92,8 +92,8 @@ module.exports = {
 
     // Generally styling
     'comma-dangle': ['error', {
-      'arrays': 'only-multiline',
-      'objects': 'only-multiline',
+      'arrays': 'always-multiline',
+      'objects': 'always-multiline',
     }],
     quotes: [2, 'single', 'avoid-escape'],
     semi: [2, 'never'],
