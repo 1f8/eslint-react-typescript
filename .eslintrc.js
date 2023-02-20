@@ -32,7 +32,7 @@ module.exports = {
     'prefer-destructuring': ['error', {
       'AssignmentExpression': {
         'array': false,
-      }
+      },
     }],
     
     // .next doesnt require React in import
@@ -42,18 +42,18 @@ module.exports = {
     // annoying to declare types for each react function component by default
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     // no implicit any
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': [0],
 
     // React Rules
     'jsx-quotes': ['error', 'prefer-single'],
     'react/button-has-type': ['error', { button: true, submit: true, reset: false }],
     'react/destructuring-assignment': ['error', 'always'],
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
-    'react/jsx-closing-bracket-location': [1, 'after-props'],
+    'react/jsx-closing-bracket-location': [0],
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
     'react/jsx-equals-spacing': ['error', 'never'],
-    'react/jsx-first-prop-new-line': ['warn', 'never'],
+    'react/jsx-first-prop-new-line': ['off'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
@@ -92,10 +92,12 @@ module.exports = {
 
     // Generally styling
     'comma-dangle': ['error', {
-      'arrays': 'only-multiline',
-      'objects': 'only-multiline',
+      'arrays': 'always-multiline',
+      'objects': 'always-multiline',
     }],
     quotes: [2, 'single', 'avoid-escape'],
-    semi: [2, 'never'],
+    semi: [2, 'never'], 
+    'jsx-a11y/click-events-have-key-events': [0],
+    'jsx-a11y/no-static-element-interactions': [0],
   },
 }
